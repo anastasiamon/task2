@@ -1,39 +1,83 @@
+#centerred-block {
+       color:black; 
+       width: 700px;
+       margin-left: 350px;
+       margin-right: 350px;        
+   }
+
+    html{min-height: 100%;}
 body {
-    background: papayawhip;
-    color:black;   
-    position: absolute;
-    top:70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
-    .class1 {margin-left:30px;
-    font-size: 18px;
-font-style: italic;}
+   background-attachment: fixed;
+   background: linear-gradient(to right,lightslategrey, papayawhip, lightslategrey);
+}
+    .maininformation { display: inline-block; vertical-align: top;}
+    .class1 {margin-left: 30px;
+             }
 input {
     border: 1px solid grey;
     border-radius: 3px; 
     font-size: 11px; 
     font-family: Tahoma;
- }
+    }
  select {
     border: 1px solid grey;
     border-radius: 3px;     
     font-size: 11px; 
     font-family: Tahoma;
  }
- label {
-     font-weight: 900;
-     
+ label,.class1:nth-of-type(odd) {
+     font-weight: 700;
+     font-size:25px;
+     font-family: gabriola;     
  }
- .light {font-weight: 300;
-margin-right: 20px}
+ 
+ .light {all: initial;
+margin-right: 15px;
+f}
  table {border-collapse: collapse;
 border: 3 px solid grey}
  th,td {
        border: 1px solid grey; }
  
-    img {
+    img {display: inline-block;
  border: 15px double;   
     border-image-slice: 15;
     border-image-repeat: stretch;
     }
+    
+    button, input [type="button"] {
+  padding: 5px 10px;
+  box-shadow: 0 4px 4px 7px lightslategrey;
+  margin-left: 5px;
+}
+button:hover, input:hover [type="button"] {
+   opacity: 0.8;
+}
+
+    input:focus {outline:none;}
+    input [type="checkbox"]:focus,
+    input [type="radio"]:focus {
+       visibility: hidden;
+    }
+    select:focus {outline:none;}
+    input,select,a,button {cursor: pointer;}
+
+    tbody>tr:hover {background-color: lightslategrey;}
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+  }  
+  ul li:before {
+      content:"—";
+  }      
+  button:active, button:focus, button:hover {
+   outline: none !important;
+ }
+ button::-moz-focus-inner {SK
+   border: 0 !important;
+ }
+
+   
+   
+    
